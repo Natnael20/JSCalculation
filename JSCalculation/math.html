@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <title>Document</title>
+</head>
+<style>
+    * {
+        margin: 0; padding: 0; box-sizing: border-box; 
+    }
+
+    body {
+        background:linear-gradient(to right,rgb(158, 6, 6), rgb(10, 10, 146));
+        color: #fff;
+        height: 100vh;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    .container {
+        height: 100vh;
+        display: grid;
+        gap: 10px;
+        place-content: center;
+    }
+
+    label {
+        font-size: 1.2em;
+    }
+</style>
+<body>
+    <div class="container">
+        <h3>Simple calculation<br>using javascript</h3>
+        <div class="row">
+            <div class="col">
+                <label for="num">Num 1</label>
+                <input class="form-control" type="number" id="num1">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <label for="num">Num 2</label>
+                <input class="form-control" type="number" id="num2">
+            </div>
+        </div>
+        <button class="btn bg-dark text-light" onclick="multiply()">Multiply</button>
+        <button class="btn bg-dark text-light" onclick="divide()">divide</button>
+        <p>The result is</p>
+        <div id="result"></div>
+    </div>
+    <script src="calculate.js"></script>
+</body>
+</html>
